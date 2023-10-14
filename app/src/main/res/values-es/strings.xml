@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">jesusexa</string>
+    <string name="model">Modelo</string>
+    <string name="price">Precio</string>
+    <string name="operating_system">Sistema Operativo</string>
+    <string name="add_cellphone">Agregar Celular</string>
+    <string name="storage">Almacenamiento</string>
+    <string name="add_a_cellphone">Agregar un Celular</string>
+    <string name="cellphone_list">Lista Celulares</string>
+</resources>

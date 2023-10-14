@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Spinner
+        android:id="@+id/spinAlmacenamiento"
+        android:layout_width="176dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.886"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editPrecio" />
+
+    <EditText
+        android:id="@+id/editPrecio"
+        android:layout_width="182dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="@string/price"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.967"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editModelo" />
+
+    <EditText
+        android:id="@+id/editid"
+        android:layout_width="170dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="@string/id"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editModelo"
+        android:layout_width="174dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="@string/model"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.936"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinMarca"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.019"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editid" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="158dp"
+        android:layout_height="213dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="180dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinAlmacenamiento">
+
+        <RadioButton
+            android:id="@+id/rad4R"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_4_gb_ram" />
+
+        <RadioButton
+            android:id="@+id/rad6R"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_6_gb_ram" />
+
+        <RadioButton
+            android:id="@+id/rad8R"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_8_gb_ram" />
+
+        <RadioButton
+            android:id="@+id/rad12R"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_12_gb_ram" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvSO"
+        android:layout_width="142dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/operating_system"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.766"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinAlmacenamiento" />
+
+    <Button
+        android:id="@+id/btnAgregar"
+        android:layout_width="157dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="88dp"
+        android:text="@string/add_cellphone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.881"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSO" />
+
+    <ImageView
+        android:id="@+id/imvMarca"
+        android:layout_width="161dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinMarca"
+        app:srcCompat="@color/design_default_color_background" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
